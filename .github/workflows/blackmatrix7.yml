@@ -7,12 +7,12 @@
 name: blackmatrix7-sync
 on:
   schedule:
-    - cron: '6 */8 * * *'
+    - cron: '6 */12 * * *'
   workflow_dispatch:
   watch:
     types: started
   repository_dispatch:
-    types: blackmatrix7-Script
+    types: blackmatrix7-ios_rule_script
 jobs:
   repo-sync:
     env:
@@ -24,7 +24,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync blackmatrix7-Script
+      - name: sync blackmatrix7-ios_rule_script-Script
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:

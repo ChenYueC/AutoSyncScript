@@ -4,7 +4,7 @@
 
 
 
-name: NobyDa-sync
+name: blackmatrix7-sync
 on:
   schedule:
     - cron: '6 */3 * * *'
@@ -12,7 +12,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-NobyDa-Script
+    types: blackmatrix7-Script
 jobs:
   repo-sync:
     env:
@@ -28,7 +28,7 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/NobyDa/Script.git"
+          source_repo: "https://github.com/blackmatrix7/Script.git"
           source_branch: "master"
-          destination_branch: "NobyDa"
+          destination_branch: "blackmatrix7"
           github_token: ${{ secrets.PAT }}

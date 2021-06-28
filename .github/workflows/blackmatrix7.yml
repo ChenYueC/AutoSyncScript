@@ -1,13 +1,13 @@
-##  NobyDa 新仓库自动定时同步代码 ，教程公众号文章讲过了，不废话了，地址https://mp.weixin.qq.com/s/fcI4vQHD8TNajvTML9g3AA
+## blackmatrix7 仓库自动定时同步代码 ，教程公众号文章讲过了，不废话了，地址https://mp.weixin.qq.com/s/fcI4vQHD8TNajvTML9g3AA
 
-## 每隔3小时拉取一次作者脚本到自己仓库的分支
+## 每隔12小时拉取一次作者脚本到自己仓库的分支
 
 
 
 name: blackmatrix7-sync
 on:
   schedule:
-    - cron: '6 */3 * * *'
+    - cron: '6 */12 * * *'
   workflow_dispatch:
   watch:
     types: started

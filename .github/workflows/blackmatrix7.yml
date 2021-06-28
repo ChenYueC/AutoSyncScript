@@ -7,7 +7,7 @@
 name: blackmatrix7-sync
 on:
   schedule:
-    - cron: '6 */12 * * *'
+    - cron: '6 */8 * * *'
   workflow_dispatch:
   watch:
     types: started
@@ -24,7 +24,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync NobyDa-Script
+      - name: sync blackmatrix7-Script
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:

@@ -12,7 +12,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: blackmatrix7-ios_rule_script
+    types: sync-blackmatrix7-ios_rule_script
 jobs:
   repo-sync:
     env:

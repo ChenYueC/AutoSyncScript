@@ -28,7 +28,7 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/blackmatrix7/Script.git"
+          source_repo: "https://github.com/blackmatrix7/ios_rule_Script.git"
           source_branch: "ios_rule_script"
           destination_branch: "blackmatrix7"
           github_token: ${{ secrets.PAT }}

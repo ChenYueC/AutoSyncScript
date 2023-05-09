@@ -1,13 +1,13 @@
 ## blackmatrix7 仓库自动定时同步代码
 
-## 每晚18.18时拉取一次作者脚本到自己仓库的分支
+## 每24小时时拉取一次作者脚本到自己仓库的分支
 
 
 
 name: blackmatrix7-sync
 on:
   schedule:
-    - cron: '0 18 18 * * *'
+    - cron: '0 0 */1 * *'
   workflow_dispatch:
   watch:
     types: started
